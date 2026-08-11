@@ -18,7 +18,7 @@ int main(){
     scanf("%s",b.Auth_name);
 
     printf("enter the id of the book ");
-    scanf("%dd",&b.id);
+    scanf("%d",&b.id);
 
     printf("enter the price of the book ");
     scanf("%f",&b.price);
@@ -28,6 +28,6 @@ int main(){
     printf("title: %s\n",b.title);
     printf("name of author:%s\n",b.Auth_name);
     printf("book id: %d\n",b.id);
-    printf("price.%f\n",b.price);
+    printf("price%.3f\n",b.price);
     return 0;
 }

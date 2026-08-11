@@ -16,7 +16,7 @@ int main() {
         printf("ID: ");
         scanf("%d", &emp[i].id);
         printf("Name: ");
-        scanf("%*c%[^\n]s", emp[i].name);
+        scanf("%*c%[^\n]", emp[i].name);
         printf("Salary: ");
         scanf("%f", &emp[i].salary);
         printf("\n");
