@@ -1,4 +1,5 @@
 #include<iostream>
+
 using namespace std;
 
 class employee{
@@ -26,10 +27,16 @@ public:
 
 
 int main(){
-    employee *s = new employee();
-    s->accpetDetails();
-    s->Display();
-    delete s;
+    int n;   
+    cout<<"enter a number of employees "<<endl;
+    cin>>n;
+    employee *s = new employee[n];
+    for(int i=0;i<n;i++){
+        s->accpetDetails();
+        s->Display();
+    }
+    
+    delete[] s;
     s= nullptr;
 
     return 0;

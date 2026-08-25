@@ -13,7 +13,7 @@ int main(){
         cin>>arr[i];
     }
     float sum;
-    cout<<"given array is ";
+   
     for(int i=0;i<n;i++){
         sum +=arr[i];
     }
