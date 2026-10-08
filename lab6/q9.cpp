@@ -8,7 +8,7 @@ public:
     void input() { cin >> celsius; }
     bool operator<(const Temperature &t) const { return celsius < t.celsius; }
     bool operator>(const Temperature &t) const { return celsius > t.celsius; }
-    float get() const { return celsius; }
+    
 };
 
 int main() {
@@ -16,8 +16,8 @@ int main() {
     cout << "Enter first temperature (C): ";  t1.input();
     cout << "Enter second temperature (C): "; t2.input();
 
-    if (t1 < t2)      cout << t1.get() << " C is lower than " << t2.get() << " C\n";
-    else if (t1 > t2) cout << t1.get() << " C is higher than " << t2.get() << " C\n";
-    else              cout << "Both temperatures are equal (" << t1.get() << " C)\n";
+    if (t1 < t2)      cout <<  "first  C is lower than " << " C\n";
+    else if (t1 > t2) cout << "second C is lower than " << " C\n";
+    else              cout << "Both temperatures are equal ";
     return 0;
 }
